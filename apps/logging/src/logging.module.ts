@@ -6,7 +6,7 @@ import { RiderCoordinatesModule } from './rider-coordinates/rider-coordinates.mo
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/27017/uber_logging_db'),
+    MongooseModule.forRoot('mongodb://root:root@localhost:27017/uber_logging_db?authSource=admin'),
     RiderCoordinatesModule,
   ],
   controllers: [LoggingController],
